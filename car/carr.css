@@ -1,0 +1,224 @@
+/* ==== Global Styling ==== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+    color: #2c3e50;
+}
+
+/* ==== Header/Login/Logout ==== */
+div > div:first-child {
+    text-align: right;
+    background: #2c3e50;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+div > div:first-child a {
+    color: #f1c40f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* ==== Main Title ==== */
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+    color: #1a237e;
+    letter-spacing: 1px;
+}
+
+/* ==== Login Form ==== */
+form {
+    width: 350px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+form h2 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+form label {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a237e;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background-color: #3949ab;
+}
+
+form p {
+    text-align: center;
+    font-weight: bold;
+}
+
+form div {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* ==== Car Cards ==== */
+div > div > div {
+    display: inline-block;
+    width: 250px;
+    background: #fff;
+    margin: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    vertical-align: top;
+}
+
+div > div > div:hover {
+    transform: translateY(-5px);
+}
+
+div > div > div img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+div > div > div h3 {
+    margin: 10px;
+    font-size: 18px;
+    color: #1a237e;
+}
+
+div > div > div p {
+    margin: 0 10px 10px 10px;
+    color: #b9c2cb;
+}
+
+/* ==== Book Now Button ==== */
+div > div > div button {
+    background: #8e44ad;
+    color: white;
+    border: none;
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+div > div > div button:hover {
+    background: #6c3483;
+}
+
+/* ==== Booking Form Styling ==== */
+form select {
+    appearance: none;
+    background: #fff;
+}
+
+form option {
+    color: #3c5f83;
+}
+
+form a {
+    color: #2980b9;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+/* ==== Booking Table ==== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+table th {
+    background: #788a9d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: #2c3e50;
+}
+
+/* ==== Success and Error Messages ==== */
+p {
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    color: green;
+}
+
+.error {
+    color: red;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    div > div > div {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
